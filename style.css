@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cabecalho {
+    background: #FF4500;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.titulo {
+    color: white;
+    font-size: 45px;
+    padding-left: 1px;
+}
+
+.cabecalho-img {
+    padding-left: 70px;
+    padding-top: 5px;
+}
+
+.cabecalho-menu {
+    padding-left: 400px;
+    display: flex;
+    gap: 60px;
+}
+
+.cabecalho-menu-item {
+    color: #DCDCDC;
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.subtitulo {
+    background: #FAEBD7;
+    border: 2px solid #FF4500;
+    border-radius: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    width: 850px;
+    text-align: center;
+    color: #FF4500;
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+.container {
+    padding-right: 150px;
+    margin-top: 50px;
+    border: 5px solid #FF4500;
+    background: #FAEBD7;
+    border-radius: 50px;
+    width: 900px;
+    margin-left: 390px;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.imagem {
+    display: inline-block;
+    width: 400px;
+}
+
+.preco {
+    display:inline-block;
+    font-size: 30px;
+
+}
+
+.atendimento{
+    border: 5px solid #FF4500;
+    border-radius: 50px;
+    margin-left: 600px;
+    margin-right: 600px;
+    background: #FAEBD7;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5%;
+
+}
+.endereco-titulo {
+    background-color: #FF4500;
+    border-radius: 40px;
+    color:#FAEBD7;
+}
+
+
+.botao{
+    display: inline block;
+    margin-left: 198px;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DCDCDC;
+    border: 5px solid #FF4500;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.botao span{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.botao span.num{
+    font-size: 50px;
+    border-right: 3px solid rgba(0,0,0,0.2);
+    border-left: 3px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+.wrapper {
+    display: inline block;
+    margin-left: 100px;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DCDCDC;
+    border: 5px solid #FF4500;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.wrapper span {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.wrapper span.num {
+    font-size: 50px;
+    border-right: 3px solid rgba(0,0,0,0.2);
+    border-left: 3px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+
+.button{
+    display: inline block;
+    margin-left: 50px;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DCDCDC;
+    border: 5px solid #FF4500;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.button span{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.button span.num{
+    font-size: 50px;
+    border-right: 3px solid rgba(0,0,0,0.2);
+    border-left: 3px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+
+.bt{
+    display: inline block;
+    margin-left: 115px;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DCDCDC;
+    border: 5px solid #FF4500;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.bt span{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.bt span.num{
+    font-size: 50px;
+    border-right: 3px solid rgba(0,0,0,0.2);
+    border-left: 3px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+

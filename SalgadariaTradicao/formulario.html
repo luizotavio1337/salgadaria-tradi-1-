@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="formulário.css">
+    <link rel="stylesheet" media="screen and(max-width: 768px)" href="mobile.css">
+    <title>Salgadaria Tradição</title>
+</head>
+<body> 
+
+  <header>
+    <section class="cabecalho">
+        <div id="fundo-container"></div>
+        <img class="cabecalho-img" src="./img/logo.PNG" width="200px";>
+        <h1 class = "titulo">SALGADARIA TRADIÇÃO</h1>
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="./index.html">HOME</a>
+            <a class="cabecalho-menu-item" href="#endereco">ENDEREÇO</a>
+            <a class="cabecalho-menu-item" href="">INFO</a>
+        </nav>
+    </section>
+</header>
+
+    <div class="form-container">
+        
+        <form class="form" action="/enviar" method="post">
+          <div class="form-group">  
+            <h1>Informações pessoais:</h1>
+            <input type="text" id="nome" name="nome" placeholder="Nome:" required>
+            <input type="tel" id="contato" name="contato" placeholder="Contato:" required>
+          </div>
+    
+         
+    
+          <div class="form-group">
+            <input type="text" id="endereco" name="endereco" placeholder="Endereço:" required>
+            <input type="text" id="bairro" name="bairro" placeholder="Bairro:" required>
+            <input type="text" id="numero" name="numero" placeholder="Número:" required>
+          </div>
+    
+          <div class="form-group">
+            <input type="date" id="data" name="data" placeholder="Data:" required>
+            <input type="text" id="hora=" name="hora" placeholder="Hora:" required>
+          </div>
+          
+          <div class="input">
+          <input type="submit" value="Enviar">
+          </div>
+        </form>
+      </div>
+    
+    </body>
+</html>

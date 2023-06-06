@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="nav-bar.css">
     <link rel="stylesheet" media="screen and(max-width: 768px)" href="mobile.css">
     <title>Salgadaria Tradição</title>
 </head>
 <body>
     <header>
-        <section class="cabecalho">
-            <div id="fundo-container"></div>
-            <img class="cabecalho-img" src="./img/logo.PNG" width="200px";>
-            <h1 class = "titulo">SALGADARIA TRADIÇÃO</h1>
-            <nav class="cabecalho-menu">
-                <a class="cabecalho-menu-item" href="./index.html">HOME</a>
-                <a class="cabecalho-menu-item" href="#endereco">ENDEREÇO</a>
-                <a class="cabecalho-menu-item" href="">INFO</a>
-            </nav>
-        </section>
-    </header>
+        <nav>
+          <img class="img-bruno" src="img/logo.PNG" alt="">
+          <a class="logo" href="/">Salgadaria Tradição</a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Endereço</a></li>
+            <li><a href="#">Informações</a></li>
+            
+          </ul>
+        </nav>
+      </header>
 
     <section>
         <h2 class = "subtitulo">Olá, bem vindos ao nosso site, faça agora seu pedido!!</h2>
@@ -62,6 +68,7 @@
             <h1 class="endereco-titulo">HORÁRIO DE FUNCIONAMENTO:</h1> <br> <h1>- SEGUNDA Á SÁBADO</h1><br><h1>- DAS 8h ÁS 20h</h1><h1><br>(EXCETO FERIADOS)</h1><br>
         </div>
 
+        <script src="mobile-navbar.js"></script>
         <script>
 
             const mais = document.querySelector(".mais"),

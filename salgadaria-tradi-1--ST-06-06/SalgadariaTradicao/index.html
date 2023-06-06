@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" media="screen and(max-width: 768px)" href="mobile.css">
+    <title>Salgadaria Tradição</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <img class="img-bruno" src="img/logo.PNG" alt="">
+          <a class="logo" href="/">Salgadaria Tradição</a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Endereço</a></li>
+            <li><a href="#">Informações</a></li>
+            
+          </ul>
+        </nav>
+      </header>
+
+    <section>
+        <h2 class = "subtitulo">Olá, bem vindos ao nosso site, faça agora seu pedido!!</h2>
+        <div class="container">
+            <img class="imagem" src="./img/coxinha.PNG" alt="Coxinha">
+            <p class="preco"><strong>Coxinha <br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="wrapper">
+                <span class="menos">-</span>
+                <span class="num">00</span>
+                <span class="mais">+</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem" src="./img/creme de milho.PNG" alt="Creme">
+            <p class="preco"><strong>Creme de milho<br><br>R$ 0,90<br>unidade</strong></p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem" src="./img/casquinha.PNG" alt="Casquinha">
+            <p class="preco"><strong>Casquinha de carne<br><br>R$ 0,90<br>unidade</strong></p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem" src="./img/travesseirinho.PNG" alt="travesseirinho">
+            <p class="preco"><strong>Travesseirinho<br><br>R$ 0,90<br>unidade</strong></p>
+        </div>
+    </section>
+     
+    <section id="endereco"></section>
+        <div class="atendimento"><h1 class="endereco-titulo">ENDEREÇO:</h1>-<h1>- BAIRRO AURÉLIO CAIXETA</h1><br>
+            <h1>- RUA TRÊS MARIAS N°83</h1><br>       
+            <h1 class="endereco-titulo">HORÁRIO DE FUNCIONAMENTO:</h1> <br> <h1>- SEGUNDA Á SÁBADO</h1><br><h1>- DAS 8h ÁS 20h</h1><h1><br>(EXCETO FERIADOS)</h1><br>
+        </div>
+
+        <script src="mobile-navbar.js"></script>
+        <script>
+
+            const mais = document.querySelector(".mais"),
+            menos = document.querySelector(".menos"),
+            num = document.querySelector(".num");
+    
+            let a = 0;
+    
+            mais.addEventListener("click", ()=>{
+                a++;
+                a = (a < 10) ? "0" + a : a;
+                num.innerText = a;
+                console.log(a);
+            });
+    
+            menos.addEventListener("click", ()=>{
+               if(a > 1){
+                a--;
+                a = (a < 10) ? "0" + a : a;
+                num.innerText = a;
+               }
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" media="screen and(max-width: 768px)" href="mobile.css">
+    <title>Salgadaria Tradição</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <img class="img-bruno" src="img/logo.PNG" alt="">
+          <a class="logo" href="">Salgadaria Tradição</a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#endereco">Endereço</a></li>
+            <li><a href="#">Informações</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <section>
+        <h2 class = "subtitulo">Olá, bem vindos ao nosso site, faça agora seu pedido!!</h2>
+        <div class="container">
+            <img class="imagem" src="./img/coxinha.PNG" alt="Coxinha">
+            <p class="preco"><strong>Coxinha <br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="botao">
+                <span class="menos">-</span>
+                <span class="num">00</span>
+                <span class="mais">+</span>
+            </div>
+            <script>
+
+                const mais = document.querySelector(".mais"),
+                menos = document.querySelector(".menos"),
+                num = document.querySelector(".num");
+        
+                let a = 0;
+        
+                mais.addEventListener("click", ()=>{
+                    a++;
+                    a = (a < 10) ? "0" + a : a;
+                    num.innerText = a;
+                    console.log(a);
+                });
+        
+                menos.addEventListener("click", ()=>{
+                   if(a > 1){
+                    a--;
+                    a = (a < 10) ? "0" + a : a;
+                    num.innerText = a;
+                   }
+                });
+            </script>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem" src="./img/creme de milho.PNG" alt="Creme">
+            <p class="preco"><strong>Creme de milho<br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="wrapper">
+                <span class="me">-</span>
+                <span class="nu">00</span>
+                <span class="ma">+</span>
+            </div>
+            <script>
+
+                const ma = document.querySelector(".ma"),
+                me = document.querySelector(".me"),
+                nu = document.querySelector(".nu");
+        
+                let b = 0;
+        
+                ma.addEventListener("click", ()=>{
+                    b++;
+                    b = (b < 10) ? "0" + b : b;
+                    nu.innerText = b;
+                    console.log(b);
+                });
+        
+                me.addEventListener("click", ()=>{
+                   if(b > 1){
+                    b--;
+                    b = (b < 10) ? "0" + b : b;
+                    nu.innerText = b;
+                   }
+                });
+            </script>
+    
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem" src="./img/casq.carne.PNG" alt="Casquinha de carne">
+            <p class="preco"><strong>Casquinha de carne <br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="button">
+                <span class="men">-</span>
+                <span class="nume">00</span>
+                <span class="mai">+</span>
+            </div>
+
+            <script>
+
+                const mai = document.querySelector(".mai"),
+                men = document.querySelector(".men"),
+                nume = document.querySelector(".nume");
+        
+                let c = 0;
+        
+                mai.addEventListener("click", ()=>{
+                    c++;
+                    c = (c < 10) ? "0" + c : c;
+                    nume.innerText = c;
+                    console.log(c);
+                });
+        
+                men.addEventListener("click", ()=>{
+                   if(c > 1){
+                    c--;
+                    c = (c < 10) ? "0" + c : c;
+                    nume.innerText = c;
+                   }
+                });
+            </script>
+    
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem" src="./img/travesseirinho.PNG" alt="travesseirinho">
+            <p class="preco"><strong>Travesseirinho<br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="bt">
+                <span class="ms">-</span>
+                <span class="n">00</span>
+                <span class="m">+</span>
+            </div>
+
+            <script>
+
+                const m = document.querySelector(".m"),
+                ms = document.querySelector(".ms"),
+                n = document.querySelector(".n");
+        
+                let d = 0;
+        
+                m.addEventListener("click", ()=>{
+                    d++;
+                    d = (d < 10) ? "0" + d : d;
+                    n.innerText = d;
+                    console.log(d);
+                });
+        
+                ms.addEventListener("click", ()=>{
+                   if(d > 1){
+                    d--;
+                    d = (d < 10) ? "0" + d : d;
+                    n.innerText = d;
+                   }
+                });
+            </script>
+    
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem-salgados" src="./img/carne moída.PNG" alt="Carne moída">
+            <p class="preco-salgados"><strong>Carne moída <br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="bn">
+                <span class="mn">-</span>
+                <span class="numer">00</span>
+                <span class="mi">+</span>
+            </div>
+
+            <script>
+
+                const mi = document.querySelector(".mi"),
+                mn = document.querySelector(".mn"),
+                numer = document.querySelector(".numer");
+        
+                let e = 0;
+        
+                mi.addEventListener("click", ()=>{
+                    e++;
+                    e = (e < 10) ? "0" + e : e;
+                    numer.innerText = e;
+                    console.log(e);
+                });
+        
+                mn.addEventListener("click", ()=>{
+                   if(e > 1){
+                    e--;
+                    e = (e < 10) ? "0" + e : e;
+                    numer.innerText = e;
+                   }
+                });
+            </script>
+    
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem-salgados" src="./img/espetinho.PNG" alt="espetinho">
+            <p class="preco-salgados"><strong>Espetinho <br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="b">
+                <span class="minus">-</span>
+                <span class="number">00</span>
+                <span class="plus">+</span>
+            </div>
+
+            <script>
+
+                const plus = document.querySelector(".plus"),
+                minus = document.querySelector(".minus"),
+                number = document.querySelector(".number");
+        
+                let f = 0;
+        
+                plus.addEventListener("click", ()=>{
+                    f++;
+                    f = (f < 10) ? "0" + f : f;
+                    number.innerText = f;
+                    console.log(f);
+                });
+        
+                minus.addEventListener("click", ()=>{
+                   if(f > 1){
+                    f--;
+                    f = (f < 10) ? "0" + f : f;
+                    number.innerText = f;
+                   }
+                });
+            </script>
+    
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem-queijo" src="./img/casq.queijo.PNG" alt="casquinha de queijo">
+            <p class="preco-salgados"><strong>Casquinha<br>queijo <br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="bo">
+                <span class="mx">-</span>
+                <span class="numero">00</span>
+                <span class="mz">+</span>
+            </div>
+
+            <script>
+
+                const mz = document.querySelector(".mz"),
+                mx = document.querySelector(".mx"),
+                numero = document.querySelector(".numero");
+        
+                let g = 0;
+        
+                mz.addEventListener("click", ()=>{
+                    g++;
+                    g = (g < 10) ? "0" + g : g;
+                    numero.innerText = g;
+                    console.log(g);
+                });
+        
+                mx.addEventListener("click", ()=>{
+                   if(g > 1){
+                    g--;
+                    g = (g < 10) ? "0" + g : g;
+                    numero.innerText = g;
+                   }
+                });
+            </script>
+    
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem-salsicha" src="./img/salsicha.PNG" alt="salsicha">
+            <p class="preco-salgados"><strong>Salsicha<br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="bot">
+                <span class="mb">-</span>
+                <span class="ns">00</span>
+                <span class="mxx">+</span>
+            </div>
+
+            <script>
+
+                const mxx = document.querySelector(".mxx"),
+                mb = document.querySelector(".mb"),
+                ns = document.querySelector(".ns");
+        
+                let h = 0;
+        
+                mxx.addEventListener("click", ()=>{
+                    h++;
+                    h = (h < 10) ? "0" + h : h;
+                    ns.innerText = h;
+                    console.log(h);
+                });
+        
+                mb.addEventListener("click", ()=>{
+                   if(h > 1){
+                    h--;
+                    h = (h < 10) ? "0" + h : h;
+                    ns.innerText = h;
+                   }
+                });
+            </script>
+    
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem-quibe" src="./img/quibe.PNG" alt="quibe">
+            <p class="preco-salgados"><strong>Quibe<br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="oatob">
+                <span class="vmenos">-</span>
+                <span class="vnumero">00</span>
+                <span class="vmais">+</span>
+            </div>
+
+            <script>
+
+                const vmais = document.querySelector(".vmais"),
+                vmenos = document.querySelector(".vmenos"),
+                vnumero = document.querySelector(".vnumero");
+        
+                let i = 0;
+        
+                vmais.addEventListener("click", ()=>{
+                    i++;
+                    i = (h < 10) ? "0" + i : i;
+                    vnumero.innerText = i;
+                    console.log(i);
+                });
+        
+                vmenos.addEventListener("click", ()=>{
+                   if(i > 1){
+                    i--;
+                    i = (i < 10) ? "0" + i: i;
+                    vnumero.innerText = i;
+                   }
+                });
+            </script>
+    
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem-bodas" src="./img/bodas.PNG" alt="bodas">
+            <p class="preco-salgados"><strong>Bodas<br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="zbot">
+                <span class="zmenos">-</span>
+                <span class="znumero">00</span>
+                <span class="zmais">+</span>
+            </div>
+
+            <script>
+
+                const zmais = document.querySelector(".zmais"),
+                zmenos = document.querySelector(".zmenos"),
+                znumero = document.querySelector(".znumero");
+        
+                let j = 0;
+        
+                zmais.addEventListener("click", ()=>{
+                    j++;
+                    j = (j < 10) ? "0" + j : j;
+                znumero.innerText = j;
+                    console.log(j);
+                });
+        
+                zmenos.addEventListener("click", ()=>{
+                   if(j > 1){
+                    j--;
+                    j = (j < 10) ? "0" + j: j;
+                    znumero.innerText = j;
+                   }
+                });
+            </script>
+    
+        </div>
+    </section>
+
+    <a href="./formulario.html">
+        <button class="botao-pedido">Concluir pedido</button>
+    </a>
+
+    <section id="endereco"></section>
+        <div class="atendimento"><h1 class="endereco-titulo">ENDEREÇO:</h1>-<h1>- BAIRRO AURÉLIO CAIXETA</h1><br>
+            <h1>- RUA TRÊS MARIAS N°83</h1><br>       
+            <h1 class="endereco-titulo">HORÁRIO DE FUNCIONAMENTO:</h1> <br> <h1>- SEGUNDA Á SÁBADO</h1><br><h1>- DAS 8h ÁS 20h</h1><h1><br>(EXCETO FERIADOS)</h1><br>
+            
+           
+            <a href="https://goo.gl/maps/QZcWSXjkF61BXNz56"></a> 
+            <a  href="https://goo.gl/maps/8N71jtWXThgM4XwF6" target="_blank">
+                <img class="maps" src="./img/unnamed (1).png">
+                <h1 class="loc">Localização </h1>
+            </a>
+        </div>
+
+    </section>
+
+    <script src="mobile-navbar.js"></script>
+    </body>
+</html>

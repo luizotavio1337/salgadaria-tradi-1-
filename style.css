@@ -1,0 +1,698 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cabecalho {
+    background: #FF4500;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.titulo {
+    color: white;
+    font-size: 90px;
+    padding-left: 1px;
+}
+
+.cabecalho-img {
+    padding-left: 70px;
+    padding-top: 5px;
+}
+
+.cabecalho-menu {
+    padding-left: 400px;
+    display: flex;
+    gap: 60px;
+}
+
+.cabecalho-menu-item {
+    color: #DCDCDC;
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+    
+}
+
+.subtitulo {
+    background: #FAEBD7;
+    border: 2px solid #FF4500;
+    border-radius: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    width: 850px;
+    text-align: center;
+    color: #FF4500;
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+.container {
+    padding-right: 150px;
+    margin-top: 50px;
+    border: 5px solid #FF4500;
+    background: #FAEBD7;
+    border-radius: 50px;
+    width: 900px;
+    margin-left: 390px;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.imagem {
+    display: inline-block;
+    width: 400px;
+}
+
+.preco {
+    display:inline-block;
+    font-size: 30px;
+}
+
+.atendimento{
+    border: 5px solid #FF4500;
+    border-radius: 50px;
+    margin-left: 600px;
+    margin-right: 600px;
+    background: #FAEBD7;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5%;
+
+}
+.endereco-titulo {
+    background-color: #FF4500;
+    border-radius: 10px;
+    color:#FAEBD7;
+    margin-top: 25px;
+}
+
+
+.buttons{
+   width: 170px;
+   display: flex;
+   align-items: center; 
+   justify-content: center;
+   display: inline block;
+   margin-left: 198px;
+   height: 50px;
+   background: #DCDCDC;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.buttons span,
+.buttons input{
+    background-color: #FAEBD7;
+    text-align: center;
+    font-size: 2rem;
+    padding: 8px;
+    color: black;
+    border: 4px solid #FF4500;
+}
+
+.buttons input{
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.buttons span{
+    user-select: none;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+.buttons span:first-child{
+    border-radius: 15px 0 0 15px;
+}
+
+.buttons span:last-child{
+    border-radius: 0 15px 15px 0;
+}
+
+.buttons span:hover{
+    color:#FAEBD7;
+    background-color: #FF4500;
+}
+
+.wrapper {
+   width: 210px;
+   display: flex;
+   align-items: center; 
+   justify-content: center;
+   display: inline block;
+   margin-left: 138px;
+   margin-right: 20px;
+   height: 50px;
+   background: #DCDCDC;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.wrapper span,
+.wrapper input{
+    background-color: #FAEBD7;
+    text-align: center;
+    font-size: 2rem;
+    padding: 8px;
+    color: black;
+    border: 4px solid #FF4500;
+}
+
+.wrapper input{
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.wrapper span{
+    user-select: none;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+.wrapper span:first-child{
+    border-radius: 15px 0 0 15px;
+}
+
+.wrapper span:last-child{
+    border-radius: 0 15px 15px 0;
+}
+
+.wrapper span:hover{
+    color:#FAEBD7;
+    background-color: #FF4500;
+}
+
+.button {
+    width: 210px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    display: inline block;
+    margin-left: 100px;
+    margin-right: 20px;
+    height: 50px;
+    background: #DCDCDC;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+ }
+ 
+ .button span,
+ .button input{
+     background-color: #FAEBD7;
+     text-align: center;
+     font-size: 2rem;
+     padding: 8px;
+     color: black;
+     border: 4px solid #FF4500;
+ }
+ 
+ .button input{
+     text-align: center;
+     width: 100%;
+     letter-spacing: 1px;
+     border-left: 1px solid grey;
+     border-right: 1px solid grey;
+ }
+ 
+ .button span{
+     user-select: none;
+     cursor: pointer;
+     padding: 8px 10px;
+ }
+ 
+ .button span:first-child{
+     border-radius: 15px 0 0 15px;
+ }
+ 
+ .button span:last-child{
+     border-radius: 0 15px 15px 0;
+ }
+ 
+ .button span:hover{
+     color:#FAEBD7;
+     background-color: #FF4500;
+ }
+
+ .bt {
+    width: 220px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    display: inline block;
+    margin-left: 120px;
+    margin-right: 20px;
+    height: 50px;
+    background: #DCDCDC;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+ }
+ 
+ .bt span,
+ .bt input{
+     background-color: #FAEBD7;
+     text-align: center;
+     font-size: 2rem;
+     padding: 8px;
+     color: black;
+     border: 4px solid #FF4500;
+ }
+.bt input{
+     text-align: center;
+     width: 100%;
+     letter-spacing: 1px;
+     border-left: 1px solid grey;
+     border-right: 1px solid grey;
+ }
+ 
+ .bt span{
+     user-select: none;
+     cursor: pointer;
+     padding: 8px 10px;
+ }
+ 
+ .bt span:first-child{
+     border-radius: 15px 0 0 15px;
+ }
+ 
+ .bt span:last-child{
+     border-radius: 0 15px 15px 0;
+ }
+ 
+ .bt span:hover{
+     color:#FAEBD7;
+     background-color: #FF4500;
+ }
+
+ .bn {
+    width: 250px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    display: inline block;
+    margin-left: 198px;
+    margin-right: 20px;
+    height: 50px;
+    background: #DCDCDC;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+ }
+ 
+ .bn span,
+ .bn input{
+     background-color: #FAEBD7;
+     text-align: center;
+     font-size: 2rem;
+     padding: 8px;
+     color: black;
+     border: 4px solid #FF4500;
+ }
+ 
+ .bn input{
+     text-align: center;
+     width: 100%;
+     letter-spacing: 1px;
+     border-left: 1px solid grey;
+     border-right: 1px solid grey;
+ }
+ 
+ .bn span{
+     user-select: none;
+     cursor: pointer;
+     padding: 8px 10px;
+ }
+ 
+ .bn span:first-child{
+     border-radius: 15px 0 0 15px;
+ }
+ 
+ .bn span:last-child{
+     border-radius: 0 15px 15px 0;
+ }
+ 
+ .bn span:hover{
+     color:#FAEBD7;
+     background-color: #FF4500;
+ }
+ 
+
+ .b {
+    width: 200px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    display: inline block;
+    margin-left: 182px;
+    margin-right: 18px;
+    height: 50px;
+    background: #DCDCDC;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+ }
+ 
+ .b span,
+ .b input{
+     background-color: #FAEBD7;
+     text-align: center;
+     font-size: 2rem;
+     padding: 8px;
+     color: black;
+     border: 4px solid #FF4500;
+ }
+ 
+ .b input{
+     text-align: center;
+     width: 100%;
+     letter-spacing: 1px;
+     border-left: 1px solid grey;
+     border-right: 1px solid grey;
+ }
+ 
+ .b span{
+     user-select: none;
+     cursor: pointer;
+     padding: 8px 10px;
+ }
+ 
+ .b span:first-child{
+     border-radius: 15px 0 0 15px;
+ }
+ 
+ .b span:last-child{
+     border-radius: 0 15px 15px 0;
+ }
+ 
+ .b span:hover{
+     color:#FAEBD7;
+     background-color: #FF4500;
+ }
+
+ .bo {
+    width: 200px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    display: inline block;
+    margin-left: 160px;
+    margin-right: 18px;
+    height: 50px;
+    background: #DCDCDC;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+ }
+ 
+ .bo span,
+ .bo input{
+     background-color: #FAEBD7;
+     text-align: center;
+     font-size: 2rem;
+     padding: 8px;
+     color: black;
+     border: 4px solid #FF4500;
+ }
+ 
+ .bo input{
+     text-align: center;
+     width: 100%;
+     letter-spacing: 1px;
+     border-left: 1px solid grey;
+     border-right: 1px solid grey;
+ }
+ 
+ .bo span{
+     user-select: none;
+     cursor: pointer;
+     padding: 8px 10px;
+ }
+ 
+ .bo span:first-child{
+     border-radius: 15px 0 0 15px;
+ }
+ 
+ .bo span:last-child{
+     border-radius: 0 15px 15px 0;
+ }
+ 
+ .bo span:hover{
+     color:#FAEBD7;
+     background-color: #FF4500;
+ }
+
+ .bot {
+    width: 200px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    display: inline block;
+    margin-left: 198px;
+    margin-right: 18px;
+    height: 50px;
+    background: #DCDCDC;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+ }
+ 
+ .bot span,
+ .bot input{
+     background-color: #FAEBD7;
+     text-align: center;
+     font-size: 2rem;
+     padding: 8px;
+     color: black;
+     border: 4px solid #FF4500;
+ }
+ 
+ .bot input{
+     text-align: center;
+     width: 100%;
+     letter-spacing: 1px;
+     border-left: 1px solid grey;
+     border-right: 1px solid grey;
+ }
+ 
+ .bot span{
+     user-select: none;
+     cursor: pointer;
+     padding: 8px 10px;
+ }
+ 
+ .bot span:first-child{
+     border-radius: 15px 0 0 15px;
+ }
+ 
+ .bot span:last-child{
+     border-radius: 0 15px 15px 0;
+ }
+ 
+ .bot span:hover{
+     color:#FAEBD7;
+     background-color: #FF4500;
+ }
+
+ .oatob {
+    width: 200px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    display: inline block;
+    margin-left: 195px;
+    margin-right: 15px;
+    height: 50px;
+    background: #DCDCDC;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+ }
+ 
+ .oatob span,
+ .oatob input{
+     background-color: #FAEBD7;
+     text-align: center;
+     font-size: 2rem;
+     padding: 8px;
+     color: black;
+     border: 4px solid #FF4500;
+ }
+ 
+ .oatob input{
+     text-align: center;
+     width: 100%;
+     letter-spacing: 1px;
+     border-left: 1px solid grey;
+     border-right: 1px solid grey;
+ }
+ 
+ .oatob span{
+     user-select: none;
+     cursor: pointer;
+     padding: 8px 10px;
+ }
+ 
+ .oatob span:first-child{
+     border-radius: 15px 0 0 15px;
+ }
+ 
+ .oatob span:last-child{
+     border-radius: 0 15px 15px 0;
+ }
+ 
+ .oatob span:hover{
+     color:#FAEBD7;
+     background-color: #FF4500;
+ }
+
+
+ .zbot {
+    width: 250px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    display: inline block;
+    margin-left: 205px;
+    margin-right: 12px;
+    height: 50px;
+    background: #DCDCDC;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+ }
+ 
+ .zbot span,
+ .zbot input{
+     background-color: #FAEBD7;
+     text-align: center;
+     font-size: 2rem;
+     padding: 8px;
+     color: black;
+     border: 4px solid #FF4500;
+ }
+ 
+ .zbot input{
+     text-align: center;
+     width: 100%;
+     letter-spacing: 1px;
+     border-left: 1px solid grey;
+     border-right: 1px solid grey;
+ }
+ 
+ .zbot span{
+     user-select: none;
+     cursor: pointer;
+     padding: 8px 10px;
+ }
+ 
+ .zbot span:first-child{
+     border-radius: 15px 0 0 15px;
+ }
+ 
+ .zbot span:last-child{
+     border-radius: 0 15px 15px 0;
+ }
+ 
+ .zbot span:hover{
+     color:#FAEBD7;
+     background-color: #FF4500;
+ }
+ 
+
+
+.imagem-salgados {
+    display: inline-block;
+    width: 160px;
+    padding-left: 140px;
+}
+
+.preco-salgados {
+    margin-top:10px;
+    display:inline-block;
+    font-size: 30px;
+    padding-left: 100px;
+
+}
+
+.imagem-queijo {
+    display: inline-block;
+    width: 180px;
+    padding-left: 130px;
+}
+
+.imagem-salsicha{
+    display: inline-block;
+    width: 170px;
+    padding-left: 135px;
+}
+
+.imagem-quibe{
+    display: inline-block;
+    width: 180px;
+    padding-left: 135px;
+}
+
+.imagem-bodas{
+    display: inline-block;
+    width: 160px;
+    padding-left: 150px;
+}
+
+.botao-pedido{
+    display: inline block;
+    font-weight: 400;
+    font-size: 35px;
+    align-items: center;
+    padding-left: 200px;
+    padding: 5px;
+    margin-left: 800px;
+    margin-top: 100px;
+    color: orangered;
+}
+
+.maps{
+    width: 60px;
+    margin: 20px;
+    margin-top: 10px;
+
+}
+
+.loc{
+    font-size: 27px;
+    align-items: center;
+    color: black;
+    margin-bottom:30px ;
+
+}
+
+.informacoes{
+    border: 5px solid #FF4500;
+    border-radius: 50px;
+    margin-left: 600px;
+    margin-right: 600px;
+    background: #FAEBD7;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5%;
+
+}
+.info-titulo {
+    background-color: #FF4500;
+    border-radius: 10px;
+    color:#FAEBD7;
+    margin-top: 25px;
+}

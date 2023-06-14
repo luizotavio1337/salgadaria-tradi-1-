@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" media="screen and(max-width: 768px)" href="mobile.css">
+    <title>Salgadaria Tradição</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <img class="img-bruno" src="img/logo.PNG" alt="">
+          <a class="logo" href="">Salgadaria Tradição</a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#endereco">Endereço</a></li>
+            <li><a href="#info">Informação</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <section>
+        <h2 class = "subtitulo">Olá, bem vindos ao nosso site, faça agora seu pedido!!</h2>
+        <div class="container">
+            <img class="imagem" src="./img/coxinha.PNG" alt="Coxinha">
+            <p class="preco"><strong>Coxinha <br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="buttons">
+                <span class="minus">&minus;</span>
+                <input type="text" class="value" value="00">
+                <span class="add">&plus;</span>
+            </div>
+            <script>
+                let minus = document.querySelector('.minus');
+                let add = document.querySelector('.add');
+                let input = document.querySelector('.value');
+
+                let format = (num) => num > 9 ? num : '0' + num;
+
+                minus.onclick = () =>{               
+                    let number = parseInt(input.value);
+                    if(number == 0){
+                        input.value = '00';
+                    }else{
+                        input.value = format(number - 1);
+                    }
+                }
+
+                add.onclick = () =>{
+                    input.value = format(parseInt(input.value) + 1);
+                }
+                
+                input.addEventListener('keyup', () =>{
+                    let number = parseInt(input.value);
+                    if(isNaN(number)){
+                        input.value = '00';
+                    }else{
+                        input.value = format(number);
+                    }
+                })
+            </script>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem" src="./img/creme de milho.PNG" alt="Creme">
+            <p class="preco"><strong>Creme de milho<br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="wrapper">
+                <span class="me">&minus;</span>
+                <input type="text" class="val" value="00">
+                <span class="ma">&plus;</span>
+            </div>
+            <script>
+                let me = document.querySelector('.me');
+                let ma = document.querySelector('.ma');
+                let inp = document.querySelector('.val');
+
+                let forma = (num) => num > 9 ? num : '0' + num;
+
+                me.onclick = () =>{               
+                    let number = parseInt(inp.value);
+                    if(number == 0){
+                        inp.value = '00';
+                    }else{
+                        inp.value = forma(number - 1);
+                    }
+                }
+
+                ma.onclick = () =>{
+                    inp.value = forma(parseInt(inp.value) + 1);
+                }
+                
+                inp.addEventListener('keyup', () =>{
+                    let number = parseInt(inp.value);
+                    if(isNaN(number)){
+                        inp.value = '00';
+                    }else{
+                        inp.value = forma(number);
+                    }
+                })
+            </script>
+    
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem" src="./img/casq.carne.PNG" alt="Casquinha de carne">
+            <p class="preco"><strong>Casquinha de carne <br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="button">
+                <span class="men">&minus;</span>
+                <input type="text" class="va" value="00">
+                <span class="mai">&plus;</span>
+            </div>
+
+            <script>
+                let men = document.querySelector('.men');
+                let mai = document.querySelector('.mai');
+                let inputr = document.querySelector('.va');
+
+                let form = (num) => num > 9 ? num : '0' + num;
+
+                men.onclick = () =>{               
+                    let number = parseInt(inputr.value);
+                    if(number == 0){
+                        inputr.value = '00';
+                    }else{
+                        inputr.value = form(number - 1);
+                    }
+                }
+
+                mai.onclick = () =>{
+                    inputr.value = form(parseInt(inputr.value) + 1);
+                }
+                
+                inputr.addEventListener('keyup', () =>{
+                    let number = parseInt(inputr.value);
+                    if(isNaN(number)){
+                        inputr.value = '00';
+                    }else{
+                        inputr.value = form(number);
+                    }
+                })
+            </script>
+    
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem" src="./img/travesseirinho.PNG" alt="travesseirinho">
+            <p class="preco"><strong>Travesseirinho<br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="bt">
+                <span class="ms">&minus;</span>
+                <input type="text" class="valort" value="00">
+                <span class="m">&plus;</span>
+            </div>
+
+            <script>
+                let ms = document.querySelector('.ms');
+                let m = document.querySelector('.m');
+                let inputt = document.querySelector('.valort');
+
+                let formata = (num) => num > 9 ? num : '0' + num;
+
+                ms.onclick = () =>{               
+                    let number = parseInt(inputt.value);
+                    if(number == 0){
+                        inputt.value = '00';
+                    }else{
+                        inputt.value = formata(number - 1);
+                    }
+                }
+
+                m.onclick = () =>{
+                    inputt.value = formata(parseInt(inputt.value) + 1);
+                }
+                
+                inputt.addEventListener('keyup', () =>{
+                    let number = parseInt(inputt.value);
+                    if(isNaN(number)){
+                        inputt.value = '00';
+                    }else{
+                        inputt.value = formata(number);
+                    }
+                })
+            </script>
+    
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem-salgados" src="./img/carne moída.PNG" alt="Carne moída">
+            <p class="preco-salgados"><strong>Carne moída <br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="bn">
+                <span class="mn">&minus;</span>
+                <input type="text" class="valorz" value="00">
+                <span class="mi">&plus;</span>
+            </div>
+
+            <script>
+                let mn = document.querySelector('.mn');
+                let mi = document.querySelector('.mi');
+                let inputz = document.querySelector('.valorz');
+
+                let formatz = (num) => num > 9 ? num : '0' + num;
+
+                mn.onclick = () =>{               
+                    let number = parseInt(inputz.value);
+                    if(number == 0){
+                        inputz.value = '00';
+                    }else{
+                        inputz.value = formatz(number - 1);
+                    }
+                }
+
+                mi.onclick = () =>{
+                    inputz.value = formatz(parseInt(inputz.value) + 1);
+                }
+                
+                inputz.addEventListener('keyup', () =>{
+                    let number = parseInt(inputz.value);
+                    if(isNaN(number)){
+                        inputz.value = '00';
+                    }else{
+                        inputz.value = formatz(number);
+                    }
+                })
+            </script>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem-salgados" src="./img/espetinho.PNG" alt="espetinho">
+            <p class="preco-salgados"><strong>Espetinho <br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="b">
+                <span class="menosxz">&minus;</span>
+                <input type="text" class="valorxz" value="00">
+                <span class="maisxz">&plus;</span>
+            </div>
+
+            <script>
+                let menosxz = document.querySelector('.menosxz');
+                let maisxz = document.querySelector('.maisxz');
+                let inputxz = document.querySelector('.valorxz');
+
+                let formatxz = (num) => num > 9 ? num : '0' + num;
+
+                menosxz.onclick = () =>{               
+                    let number = parseInt(inputxz.value);
+                    if(number == 0){
+                        inputxz.value = '00';
+                    }else{
+                        inputxz.value = formatxz(number - 1);
+                    }
+                }
+
+                maisxz.onclick = () =>{
+                    inputxz.value = formatxz(parseInt(inputxz.value) + 1);
+                }
+                
+                inputxz.addEventListener('keyup', () =>{
+                    let number = parseInt(inputxz.value);
+                    if(isNaN(number)){
+                        inputxz.value = '00';
+                    }else{
+                        inputxz.value = formatxz(number);
+                    }
+                })
+            </script>
+
+          
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem-queijo" src="./img/casq.queijo.PNG" alt="casquinha de queijo">
+            <p class="preco-salgados"><strong>Casquinha<br>queijo <br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="bo">
+                <span class="menosxc">&minus;</span>
+                <input type="text" class="valorxc" value="00">
+                <span class="maisxc">&plus;</span>
+            </div>
+
+            <script>
+                let menosxc = document.querySelector('.menosxc');
+                let maisxc = document.querySelector('.maisxc');
+                let inputxc = document.querySelector('.valorxc');
+
+                let formatxc = (num) => num > 9 ? num : '0' + num;
+
+                menosxc.onclick = () =>{               
+                    let number = parseInt(inputxc.value);
+                    if(number == 0){
+                        inputxc.value = '00';
+                    }else{
+                        inputxc.value = formatxc(number - 1);
+                    }
+                }
+
+                maisxc.onclick = () =>{
+                    inputxc.value = formatxc(parseInt(inputxc.value) + 1);
+                }
+                
+                inputxc.addEventListener('keyup', () =>{
+                    let number = parseInt(inputxc.value);
+                    if(isNaN(number)){
+                        inputxc.value = '00';
+                    }else{
+                        inputxc.value = formatxc(number);
+                    }
+                })
+            </script>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem-salsicha" src="./img/salsicha.PNG" alt="salsicha">
+            <p class="preco-salgados"><strong>Salsicha<br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="bot">
+                <span class="mb">&minus;</span>
+                <input type="text" class="valorm" value="00">
+                <span class="mmx">&plus;</span>
+            </div>
+
+            <script>
+                let mb = document.querySelector('.mb');
+                let mmx = document.querySelector('.mmx');
+                let inputm = document.querySelector('.valorm');
+
+                let formatm = (num) => num > 9 ? num : '0' + num;
+
+                mb.onclick = () =>{               
+                    let number = parseInt(inputm.value);
+                    if(number == 0){
+                        inputm.value = '00';
+                    }else{
+                        inputm.value = formatm(number - 1);
+                    }
+                }
+
+                mmx.onclick = () =>{
+                    inputm.value = formatm(parseInt(inputm.value) + 1);
+                }
+                
+                inputm.addEventListener('keyup', () =>{
+                    let number = parseInt(inputm.value);
+                    if(isNaN(number)){
+                        inputm.value = '00';
+                    }else{
+                        inputm.value = formatm(number);
+                    }
+                })
+            </script>
+    
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem-quibe" src="./img/quibe.PNG" alt="quibe">
+            <p class="preco-salgados"><strong>Quibe<br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="oatob">
+                <span class="menosv">&minus;</span>
+                <input type="text" class="valorv" value="00">
+                <span class="maisv">&plus;</span>
+            </div>
+
+            <script>
+                let menosv = document.querySelector('.menosv');
+                let maisv = document.querySelector('.maisv');
+                let inputv = document.querySelector('.valorv');
+
+                let formatv = (num) => num > 9 ? num : '0' + num;
+
+                menosv.onclick = () =>{               
+                    let number = parseInt(inputv.value);
+                    if(number == 0){
+                        inputv.value = '00';
+                    }else{
+                        inputv.value = formatv(number - 1);
+                    }
+                }
+
+                maisv.onclick = () =>{
+                    inputv.value = formatv(parseInt(inputv.value) + 1);
+                }
+                
+                inputv.addEventListener('keyup', () =>{
+                    let number = parseInt(inputv.value);
+                    if(isNaN(number)){
+                        inputv.value = '00';
+                    }else{
+                        inputv.value = formatv(number);
+                    }
+                })
+            </script>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img class="imagem-bodas" src="./img/bodas.PNG" alt="bodas">
+            <p class="preco-salgados"><strong>Bodas<br><br>R$ 0,90<br>unidade</strong></p>
+            <div class="zbot">
+                <span class="menosc">&minus;</span>
+                <input type="text" class="valorc" value="00">
+                <span class="maisc">&plus;</span>
+            </div>
+
+            <script>
+                let menosc = document.querySelector('.menosc');
+                let maisc = document.querySelector('.maisc');
+                let inputc = document.querySelector('.valorc');
+
+                let formatc = (num) => num > 9 ? num : '0' + num;
+
+                menosc.onclick = () =>{               
+                    let number = parseInt(inputc.value);
+                    if(number == 0){
+                        inputc.value = '00';
+                    }else{
+                        inputc.value = formatc(number - 1);
+                    }
+                }
+
+                maisc.onclick = () =>{
+                    inputc.value = formatc(parseInt(inputc.value) + 1);
+                }
+                
+                inputc.addEventListener('keyup', () =>{
+                    let number = parseInt(inputc.value);
+                    if(isNaN(number)){
+                        inputc.value = '00';
+                    }else{
+                        inputc.value = formatc(number);
+                    }
+                })
+            </script>
+    
+        </div>
+    </section>
+
+    <a href="./formulario.html">
+        <button class="botao-pedido">Concluir pedido</button>
+    </a>
+
+    <section id="endereco"></section>
+        <div class="atendimento"><h1 class="endereco-titulo">ENDEREÇO:</h1>-<h1>- BAIRRO AURÉLIO CAIXETA</h1><br>
+            <h1>- RUA TRÊS MARIAS N°83</h1><br>       
+            <h1 class="endereco-titulo">HORÁRIO DE FUNCIONAMENTO:</h1> <br> <h1>- SEGUNDA Á SÁBADO</h1><br><h1>- DAS 8h ÁS 20h</h1><h1><br>(EXCETO FERIADOS)</h1><br>
+            
+           
+            <a href="https://goo.gl/maps/QZcWSXjkF61BXNz56"></a> 
+            <a  href="https://goo.gl/maps/8N71jtWXThgM4XwF6" target="_blank">
+                <img class="maps" src="./img/unnamed (1).png">
+                <h1 class="loc">Localização </h1>
+            </a>
+        </div>
+
+    </section>
+
+    <section id="info"></section>
+        <div class="informacoes"><h1 class="info-titulo">INFORMAÇÕES:</h1> <br> <br> <h1>A Salgadaria Tradição é um estabelecimento renomado que se destaca por oferecer uma ampla variedade de salgados fritos e congelados, além de proporcionar comodidade aos clientes através dos serviços de entrega e retirada.</h1><br> <br> <br>
+            <h1>Com uma equipe dedicada e experiente, a Salgadaria Tradição se esforça para garantir a qualidade e o sabor excepcionais de seus salgados. Cada salgado é preparado com ingredientes frescos e selecionados com rigor, resultando em um produto final de alto padrão.</h1>       
+            <h1 class="info-titulo"></h1> <br> <h1>A salgadaria se orgulha de oferecer uma diversidade de salgados fritos, como coxinhas, bodas, risoles, quibes, enroladinhos, espetinhos e pastéis, todos com uma crocância irresitível. A técnica de fritura utilizada pela equipe da Salgadaria Tradição garante uma textura perfeita, sem excesso de óleo e com um sabor único.</h1><br><h1></h1><h1><br></h1><br>
+        </div>
+
+    </section>
+
+    <script src="mobile-navbar.js"></script>
+    </body>
+</html>
